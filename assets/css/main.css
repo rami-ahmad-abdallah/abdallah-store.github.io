@@ -2699,13 +2699,13 @@ tr.total-data td strong {
   padding: 20px;
 }
 
-.billing-address-form form p input {
+.billing-address-form p input {
   border: 1px solid #ddd;
   padding: 15px;
   width: 100%;
   border-radius: 3px;
 }
-.billing-address-form form p select {
+.billing-address-form p select {
   border: 1px solid #ddd;
   padding: 15px;
   width: 100%;
@@ -2713,13 +2713,14 @@ tr.total-data td strong {
   background-color: transparent;
 }
 
-.billing-address-form form p textarea {
+.billing-address-form p textarea {
   width: 100%;
   border-radius: 3px;
   border: 1px solid #ddd;
   padding: 15px;
   height: 120px;
   resize: none;
+  margin: 15px 0px;
 }
 
 .shipping-address-form p,
@@ -2852,4 +2853,115 @@ table.order-details tbody td {
 
 .payments p img:hover {
   box-shadow: 0px 0px 10px -1px #0000005c;
+}
+
+.address-wrapper {
+  background: #3f3f3f;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.address-wrapper input {
+  width: 20px;
+}
+
+.address-wrapper .address-title {
+  color: white;
+  font-size: 20px;
+  margin: 0;
+}
+
+.address-wrapper .address-shorts {
+  color: #ffffffb3;
+}
+
+.add-address-form-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #0c0c0cad;
+  z-index: 1500;
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100px);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+
+.add-address-form-wrapper > * {
+  text-align: right;
+}
+
+.activate-add-new-address-form {
+  transform: translateY(0px);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.add-address-form-wrapper form {
+  min-width: 300px;
+  background: #f3f3f3;
+  padding: 15px;
+  height: fit-content;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px;
+}
+
+.add-address-form-wrapper form input,
+.add-address-form-wrapper form select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #9d9d9d;
+  outline: none;
+  border-radius: 5px;
+  background: #f9f9f9;
+  text-align: right;
+}
+
+.add-address-form-wrapper form .input-error {
+  font-size: 12px;
+  color: #ff5c5c;
+}
+
+.add-address-form-wrapper .actions {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+
+.add-address-form-wrapper .submit-btn {
+  width: fit-content;
+  border: 1px solid !important;
+  padding: 10px;
+  border-radius: 10px !important;
+}
+
+.coupon-form {
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.coupon-form form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+
+.coupon-form input {
+  height: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  text-align: right;
 }

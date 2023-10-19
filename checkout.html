@@ -136,36 +136,116 @@
     </div>
     <!-- end breadcrumb section -->
 
-    <!-- check out section -->
-    <div class="checkout-section mt-150 mb-150">
-      <div class="container">
-        <div class="row text-right" style="direction: rtl">
-          <div class="col-lg-8">
-            <div class="checkout-accordion-wrap">
-              <div class="accordion" id="accordionExample">
-                <div class="card single-accordion">
-                  <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                      <button
-                        class="btn btn-link"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#collapseOne"
-                        aria-expanded="true"
-                        aria-controls="collapseOne">
-                        عنوان وتفاصيل التوصيل
-                      </button>
-                    </h5>
-                  </div>
+    <!-- ADD NEW ADDRESS FORM -->
+    <div class="add-address-form-wrapper" id="add-address-form">
+      <form action="index.html">
+        <p>
+          <input
+            type="text"
+            name="title"
+            placeholder="إسم العنوان الجديد, مثال: المنزل, المكتب" />
+          <span class="input-error">
+            .أبجد هوز حطى كلمن هوى ، إجراءات المراقبة المعززة. التوازن ،
+            الاحتياجات
+          </span>
+        </p>
 
-                  <div
-                    id="collapseOne"
-                    class="collapse show"
-                    aria-labelledby="headingOne"
-                    data-parent="#accordionExample">
-                    <div class="card-body">
-                      <div class="billing-address-form">
-                        <form action="index.html">
+        <p>
+          <select name="city" id="city" required>
+            <option value="">إختر مدينة</option>
+            <option value="maca">مكة</option>
+            <option value="madina">المدينة</option>
+            <option value="ryadh">الرياض</option>
+          </select>
+          <span class="input-error">
+            .أبجد هوز حطى كلمن هوى ، إجراءات المراقبة المعززة. التوازن ،
+            الاحتياجات
+          </span>
+        </p>
+
+        <p>
+          <input type="text" placeholder="الحي" name="area" value="" />
+          <span class="input-error">
+            .أبجد هوز حطى كلمن هوى ، إجراءات المراقبة المعززة. التوازن ،
+            الاحتياجات
+          </span>
+        </p>
+
+        <p>
+          <input type="text" name="street" value="" placeholder="الشارع" />
+          <span class="input-error">
+            .أبجد هوز حطى كلمن هوى ، إجراءات المراقبة المعززة. التوازن ،
+            الاحتياجات
+          </span>
+        </p>
+
+        <p>
+          <input
+            type="text"
+            name="home"
+            value=""
+            placeholder="نوع الوحدة السكنية" />
+          <span class="input-error">
+            .أبجد هوز حطى كلمن هوى ، إجراءات المراقبة المعززة. التوازن ،
+            الاحتياجات
+          </span>
+        </p>
+
+        <p>
+          <input
+            type="text"
+            name="postal"
+            value=""
+            placeholder="الرمز البريدي" />
+          <span class="input-error">
+            .أبجد هوز حطى كلمن هوى ، إجراءات المراقبة المعززة. التوازن ،
+            الاحتياجات
+          </span>
+        </p>
+
+        <div class="actions">
+          <input type="submit" class="submit-btn" value="إضافة العنوان" />
+          <button
+            type="button"
+            class="cancel btn btn-danger"
+            onclick="hideNewAddressForm();">
+            إلغاء
+          </button>
+        </div>
+      </form>
+    </div>
+    <!-- END ADD NEW ADDRESS FORM -->
+
+    <!-- check out section -->
+    <div class="checkout-section mt-150 mb-15">
+      <div class="container">
+        <form action="index.html">
+          <div class="row text-right" style="direction: rtl">
+            <div class="col-lg-8">
+              <div class="checkout-accordion-wrap">
+                <div class="accordion" id="accordionExample">
+                  <div class="card single-accordion">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne">
+                          البيانات الشخصية
+                        </button>
+                      </h5>
+                    </div>
+
+                    <div
+                      id="collapseOne"
+                      class="collapse show"
+                      aria-labelledby="headingOne"
+                      data-parent="#accordionExample">
+                      <div class="card-body">
+                        <div class="billing-address-form">
                           <p>
                             <input
                               type="text"
@@ -182,179 +262,204 @@
                           </p>
 
                           <p>
-                            <select name="city" id="city" required>
-                              <option value="">إختر مدينة</option>
-                              <option value="maca">مكة</option>
-                              <option value="madina">المدينة</option>
-                              <option value="ryadh">الرياض</option>
-                            </select>
-                          </p>
-
-                          <p>
-                            <input
-                              type="text"
-                              placeholder="الحي"
-                              name="area"
-                              value="" />
-                          </p>
-
-                          <p>
-                            <input
-                              type="text"
-                              name="street"
-                              value=""
-                              placeholder="الشارع" />
-                          </p>
-
-                          <p>
-                            <input
-                              type="text"
-                              name="home"
-                              value=""
-                              placeholder="نوع الوحدة السكنية" />
-                          </p>
-
-                          <p>
-                            <input
-                              type="text"
-                              name="postal"
-                              value=""
-                              placeholder="الرمز البريدي" />
-                          </p>
-
-                          <p>
                             <input
                               class="text-right"
                               type="tel"
                               placeholder="رقم الهاتف" />
                           </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card single-accordion">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseTwo"
+                          aria-expanded="true"
+                          aria-controls="collapseTwo">
+                          عنوان التوصيل
+                        </button>
+                      </h5>
+                    </div>
+
+                    <div
+                      id="collapseTwo"
+                      class="collapse"
+                      aria-labelledby="headingOne"
+                      data-parent="#accordionExample">
+                      <div class="card-body">
+                        <div class="billing-address-form">
+                          <h5>لا يوجد عنوان توصيل بعد</h5>
+
+                          <div class="radio-address-field">
+                            <label for="add1" class="address-wrapper">
+                              <input type="radio" name="address_id" id="add1" />
+                              <div class="address-info">
+                                <p class="address-title">المنزل</p>
+                                <p class="address-shorts">
+                                  الرياض, حي عنيزة, شارع خمسة, شقة 45, 1028
+                                </p>
+                              </div>
+                            </label>
+                          </div>
+
+                          <div class="radio-address-field">
+                            <label for="add2" class="address-wrapper">
+                              <input type="radio" name="address_id" id="add2" />
+                              <div class="address-info">
+                                <p class="address-title">المكتب</p>
+                                <p class="address-shorts">
+                                  الرياض, حي عنيزة, شارع خمسة, شقة 45, 1028
+                                </p>
+                              </div>
+                            </label>
+                          </div>
+
+                          <a
+                            id="add-address-form-btn"
+                            onclick="showNewAddressForm();"
+                            class="my-5">
+                            أضف عنوان توصيل جديد
+                          </a>
 
                           <p>
                             <textarea
                               name="notes"
-                              id="bill"
+                              id="notes"
                               cols="30"
                               rows="10"
                               placeholder="ملاحظات إضافية"></textarea>
                           </p>
-                        </form>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="card single-accordion">
-                  <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                      <button
-                        class="btn btn-link collapsed"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#collapseThree"
-                        aria-expanded="false"
-                        aria-controls="collapseThree">
-                        طريقة الدفع
-                      </button>
-                    </h5>
-                  </div>
-                  <div
-                    id="collapseThree"
-                    class="collapse"
-                    aria-labelledby="headingThree"
-                    data-parent="#accordionExample">
-                    <div class="card-body">
-                      <div class="card-details payments">
-                        <p>
-                          <img
-                            width="150"
-                            src="./assets/img/payment/apple-pay-73550.png"
-                            alt="apple-pay" />
-                        </p>
+                  <div class="card single-accordion">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button
+                          class="btn btn-link collapsed"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree">
+                          طريقة الدفع
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="collapseThree"
+                      class="collapse"
+                      aria-labelledby="headingThree"
+                      data-parent="#accordionExample">
+                      <div class="card-body">
+                        <div class="card-details payments">
+                          <p>
+                            <img
+                              width="150"
+                              src="./assets/img/payment/apple-pay-73550.png"
+                              alt="apple-pay" />
+                          </p>
 
-                        <p>
-                          <img
-                            width="150"
-                            src="./assets/img/payment/mada-pay.png"
-                            alt="mada-pay" />
-                        </p>
+                          <p>
+                            <img
+                              width="150"
+                              src="./assets/img/payment/mada-pay.png"
+                              alt="mada-pay" />
+                          </p>
 
-                        <p>
-                          <img
-                            width="150"
-                            src="./assets/img/payment/mastercard.png"
-                            alt="master-pay" />
-                        </p>
+                          <p>
+                            <img
+                              width="150"
+                              src="./assets/img/payment/mastercard.png"
+                              alt="master-pay" />
+                          </p>
 
-                        <p>
-                          <img
-                            width="150"
-                            src="./assets/img/payment/visa.png"
-                            alt="visa-pay" />
-                        </p>
+                          <p>
+                            <img
+                              width="150"
+                              src="./assets/img/payment/visa.png"
+                              alt="visa-pay" />
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-4">
-            <div class="order-details-wrap">
-              <table class="order-details">
-                <thead>
-                  <tr>
-                    <th>تفاصيل طلبك</th>
-                    <th>السعر</th>
-                  </tr>
-                </thead>
-                <tbody class="order-details-body">
-                  <tr>
-                    <td>المنتج</td>
-                    <td>إجمالي</td>
-                  </tr>
-                  <tr>
-                    <td>إسم المنتج</td>
-                    <td><span>ر.س</span> 100</td>
-                  </tr>
-                  <tr>
-                    <td>إسم المنتج</td>
-                    <td><span>ر.س</span> 100</td>
-                  </tr>
-                  <tr>
-                    <td>إسم المنتج</td>
-                    <td><span>ر.س</span> 100</td>
-                  </tr>
-                </tbody>
-                <tbody class="checkout-details">
-                  <tr>
-                    <td>إجمالي المنتجات</td>
-                    <td><span>ر.س</span> 300</td>
-                  </tr>
+            <div class="col-lg-4">
+              <div class="order-details-wrap">
+                <table class="order-details">
+                  <thead>
+                    <tr>
+                      <th>تفاصيل طلبك</th>
+                      <th>السعر</th>
+                    </tr>
+                  </thead>
+                  <tbody class="order-details-body">
+                    <tr>
+                      <td>المنتج</td>
+                      <td>إجمالي</td>
+                    </tr>
+                    <tr>
+                      <td>إسم المنتج</td>
+                      <td><span>ر.س</span> 100</td>
+                    </tr>
+                    <tr>
+                      <td>إسم المنتج</td>
+                      <td><span>ر.س</span> 100</td>
+                    </tr>
+                    <tr>
+                      <td>إسم المنتج</td>
+                      <td><span>ر.س</span> 100</td>
+                    </tr>
+                  </tbody>
+                  <tbody class="checkout-details">
+                    <tr>
+                      <td>إجمالي المنتجات</td>
+                      <td><span>ر.س</span> 300</td>
+                    </tr>
 
-                  <tr>
-                    <td>خصم المنتجات</td>
-                    <td><span>ر.س</span> 30</td>
-                  </tr>
+                    <tr>
+                      <td>خصم المنتجات</td>
+                      <td><span>ر.س</span> 30</td>
+                    </tr>
 
-                  <tr>
-                    <td>خصم القسيمة</td>
-                    <td><span>ر.س</span> 30</td>
-                  </tr>
+                    <tr>
+                      <td>خصم القسيمة</td>
+                      <td><span>ر.س</span> 30</td>
+                    </tr>
 
-                  <tr>
-                    <td>الإجمالي الكلي</td>
-                    <td><span>ر.س</span> 320</td>
-                  </tr>
-                </tbody>
-              </table>
-              <a href="#" class="boxed-btn">تأكيد الطلب</a>
+                    <tr>
+                      <td>الإجمالي الكلي</td>
+                      <td><span>ر.س</span> 320</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="#" class="boxed-btn">تأكيد الطلب</a>
+              </div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
     <!-- end check out section -->
+
+    <div class="container coupon-form">
+      <form action="#">
+        <input type="text" name="coupon_id" placeholder="أدخل كود القسيمة" />
+        <input type="submit" value="تطبيق " />
+      </form>
+    </div>
 
     <!-- footer -->
     <div class="footer-area">
