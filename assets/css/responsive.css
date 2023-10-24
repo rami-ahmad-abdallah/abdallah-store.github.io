@@ -18,13 +18,15 @@
     margin-right: 0;
     margin-bottom: 15px;
   }
-  .contact-form form p input[type="email"] {
+  .contact-form form p input[type="email"],
+  .contact-form form p input[type="password"] {
     margin-left: 8px;
   }
   .contact-form-box h4 i {
     left: -20%;
   }
-  .comment-template form p input[type="email"] {
+  .comment-template form p input[type="email"],
+  .comment-template form p input[type="password"] {
     margin-left: 8px;
   }
   ul.main-menu li a {
@@ -65,11 +67,13 @@
   }
   .contact-form form p input[type="text"],
   .contact-form form p input[type="tel"],
-  .contact-form form p input[type="email"] {
+  .contact-form form p input[type="email"],
+  .contact-form form p input[type="password"] {
     width: 100%;
   }
 
-  .contact-form form p input[type="email"] {
+  .contact-form form p input[type="email"],
+  .contact-form form p input[type="password"] {
     margin-left: 0;
     margin-top: 15px;
   }
@@ -83,11 +87,13 @@
   }
 
   .comment-template form p input[type="text"],
-  .comment-template form p input[type="email"] {
+  .comment-template form p input[type="email"],
+  .comment-template form p input[type="password"] {
     width: 100%;
   }
 
-  .comment-template form p input[type="email"] {
+  .comment-template form p input[type="email"],
+  .comment-template form p input[type="password"] {
     margin-top: 15px;
     margin-left: 0;
   }
@@ -306,14 +312,16 @@
 
   .contact-form form p input[type="text"],
   .contact-form form p input[type="tel"],
-  .contact-form form p input[type="email"] {
+  .contact-form form p input[type="email"],
+  .contact-form form p input[type="password"] {
     width: 100%;
   }
   .contact-form form p input[type="tel"] {
     margin-bottom: 15px;
   }
 
-  .contact-form form p input[type="email"] {
+  .contact-form form p input[type="email"],
+  .contact-form form p input[type="password"] {
     margin-left: 0;
     margin-top: 15px;
   }
@@ -322,13 +330,15 @@
     font-size: 20px;
   }
 
-  .comment-template form p input[type="email"] {
+  .comment-template form p input[type="email"],
+  .contact-form form p input[type="password"] {
     margin-left: 0;
     margin-top: 15px;
   }
 
   .comment-template form p input[type="text"],
-  .comment-template form p input[type="email"] {
+  .comment-template form p input[type="email"],
+  .contact-form form p input[type="password"] {
     width: 100%;
   }
 

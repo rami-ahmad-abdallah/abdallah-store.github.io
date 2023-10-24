@@ -1845,7 +1845,8 @@ span.comment-date {
   color: #051922;
 }
 
-.comment-template form p input[type="email"] {
+.comment-template form p input[type="email"],
+.comment-template form p input[type="password"] {
   border: 1px solid #ddd;
   width: 49%;
   padding: 15px;
@@ -2299,7 +2300,8 @@ ul.social-link-team li a {
 
 .contact-form form p input[type="text"],
 .contact-form form p input[type="tel"],
-.contact-form form p input[type="email"] {
+.contact-form form p input[type="email"],
+.contact-form form p input[type="password"] {
   width: 49%;
   padding: 15px;
   border: 1px solid #ddd;
@@ -2441,6 +2443,7 @@ ul.social-link-team li a {
 
 .single-product-item {
   margin-bottom: 30px;
+  height: 680px;
 }
 
 .product-image {
@@ -2471,8 +2474,18 @@ p.product-price {
 p.product-price span {
   display: block;
   opacity: 0.8;
-  font-size: 15px;
+  font-size: 30px;
   font-weight: 400;
+}
+
+p select {
+  width: 90%;
+  text-align: right;
+  padding: 5px;
+  border: 1px solid #e5e5e5;
+  background: transparent;
+  outline: none;
+  border-radius: 5px;
 }
 
 a.cart-btn {

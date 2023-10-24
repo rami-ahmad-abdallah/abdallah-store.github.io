@@ -75,44 +75,34 @@
                     <a href="index.html">الرئيسية</a>
                   </li>
                   <li><a href="about.html">من نحن</a></li>
-                  <!-- <li>
-                    <a href="#">Pages</a>
-                    <ul class="sub-menu">
-                      <li><a href="404.html">404 page</a></li>
-                      <li><a href="about.html">About</a></li>
-                      <li><a href="cart.html">Cart</a></li>
-                      <li><a href="checkout.html">Check Out</a></li>
-                      <li><a href="contact.html">Contact</a></li>
-                      <li><a href="news.html">News</a></li>
-                      <li><a href="shop.html">Shop</a></li>
-                    </ul>
-                  </li> -->
-
                   <li><a href="contact.html">تواصل معنا</a></li>
                   <li>
                     <a href="shop.html">المتجر</a>
-                    <!-- <ul class="sub-menu">
-                      <li><a href="shop.html">Shop</a></li>
-                      <li><a href="checkout.html">Check Out</a></li>
-                      <li><a href="single-product.html">Single Product</a></li>
-                      <li><a href="cart.html">Cart</a></li>
-                    </ul> -->
+                  </li>
+                  <li>
+                    <a href="orders.html">طلباتي</a>
+                  </li>
+                  <li>
+                    <a href="profile.html">حسابي</a>
+                  </li>
+                  <li>
+                    <a href="login.html">التسجيل</a>
                   </li>
                   <li>
                     <div class="header-icons">
-                      <a class="shopping-cart" href="cart.html"
-                        ><i class="fas fa-shopping-cart"></i
-                      ></a>
-                      <a class="mobile-hide search-bar-icon" href="#"
-                        ><i class="fas fa-search"></i
-                      ></a>
+                      <a class="shopping-cart" href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                      </a>
+                      <a class="mobile-hide search-bar-icon" href="#">
+                        <i class="fas fa-search"></i>
+                      </a>
                     </div>
                   </li>
                 </ul>
               </nav>
-              <a class="mobile-show search-bar-icon" href="#"
-                ><i class="fas fa-search"></i
-              ></a>
+              <a class="mobile-show search-bar-icon" href="#">
+                <i class="fas fa-search"></i>
+              </a>
               <div class="mobile-menu"></div>
               <!-- menu end -->
             </div>
@@ -219,10 +209,16 @@
                 هنا يتم عرض وصف الجهاز بشكل بسيط وعند الضغط على الجهاز يتم
                 التحويل إلى صفحة الجهاز لعرض كافة البيانات
               </p>
+              <p>
+                <select name="variation_id" class="variation-select">
+                  <option value="1">الخيار الأول</option>
+                  <option value="2">الخيار الثاني</option>
+                </select>
+              </p>
               <p
                 class="product-price d-flex align-items-center justify-content-center"
                 style="gap: 10px">
-                <span>ر.س</span>85
+                ر.س<span class="item-price product-price">85</span>
               </p>
               <a href="cart.html" class="cart-btn"
                 ><i class="fas fa-shopping-cart"></i> إضافة إلى السلة</a
@@ -241,10 +237,16 @@
                 هنا يتم عرض وصف الجهاز بشكل بسيط وعند الضغط على الجهاز يتم
                 التحويل إلى صفحة الجهاز لعرض كافة البيانات
               </p>
+              <p>
+                <select name="variation_id" class="variation-select">
+                  <option value="1">الخيار الأول</option>
+                  <option value="2">الخيار الثاني</option>
+                </select>
+              </p>
               <p
                 class="product-price d-flex align-items-center justify-content-center"
                 style="gap: 10px">
-                <span>ر.س</span>85
+                ر.س<span class="item-price product-price">85</span>
               </p>
               <a href="cart.html" class="cart-btn"
                 ><i class="fas fa-shopping-cart"></i> إضافة إلى السلة</a
@@ -263,14 +265,20 @@
                 هنا يتم عرض وصف الجهاز بشكل بسيط وعند الضغط على الجهاز يتم
                 التحويل إلى صفحة الجهاز لعرض كافة البيانات
               </p>
+              <p>
+                <select name="variation_id" class="variation-select">
+                  <option value="1">الخيار الأول</option>
+                  <option value="2">الخيار الثاني</option>
+                </select>
+              </p>
               <p
                 class="product-price d-flex align-items-center justify-content-center"
                 style="gap: 10px">
-                <span>ر.س</span>85
+                ر.س<span class="item-price product-price">85</span>
               </p>
-              <a href="cart.html" class="cart-btn"
-                ><i class="fas fa-shopping-cart"></i> إضافة إلى السلة</a
-              >
+              <a href="cart.html" class="cart-btn">
+                <i class="fas fa-shopping-cart"></i> إضافة إلى السلة
+              </a>
             </div>
           </div>
         </div>
@@ -398,5 +406,18 @@
     <script src="assets/js/sticker.js"></script>
     <!-- main js -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+      let allProductsSelects = document.querySelectorAll(".variation-select");
+
+      allProductsSelects.forEach((el) => {
+        el.addEventListener("change", () => {
+          console.log(el.value);
+          let parentProduct = el.parentElement.parentElement;
+          let priceTag = parentProduct.querySelector(".item-price");
+          priceTag.innerText = "100";
+        });
+      });
+    </script>
   </body>
 </html>
