@@ -2,17 +2,17 @@
 <html lang="ar">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="المتجر الأول لبيع أجهزة التجميل في المملكة العربية السعودية" />
+      content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/" />
 
     <!-- title -->
-    <title>تواصل معنا</title>
+    <title>جميع المنتجات</title>
 
     <!-- favicon -->
     <link rel="shortcut icon" type="image/png" href="assets/img/favicons.png" />
-
     <!-- google font -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
@@ -136,8 +136,8 @@
         <div class="row">
           <div class="col-lg-8 offset-lg-2 text-center">
             <div class="breadcrumb-text">
-              <p style="letter-spacing: 0px">إحصل على الدعم 24/7</p>
-              <h1>تواصل معنا</h1>
+              <p style="letter-spacing: 0px"></p>
+              <h1>طلباتي</h1>
             </div>
           </div>
         </div>
@@ -145,74 +145,144 @@
     </div>
     <!-- end breadcrumb section -->
 
-    <!-- contact form -->
-    <div class="contact-from-section mt-150 mb-150">
+    <!-- products -->
+    <div class="product-section mt-150 mb-150">
       <div class="container">
-        <div class="row text-right" style="direction: rtl">
-          <div class="col-lg-12 mb-5 mb-lg-0">
-            <div class="form-title">
-              <h2>هل لديك أي سؤال ؟</h2>
-              <p>
-                .أبجد هوز حطى كلمن هوى ، حسومات محسنة. خطأ الحقيقة أننا يمكن
-                قطعه مفتوحا. قيل موليستياس ، سوف أكون سهلًا عليك ، فقل الألم هو
-                متعة الباني الرئيسي ، ولا الملذات التي قد يرضيها أحدنا في
-                المتاعب والفرار ؛ بالنسبة له ، المحاضر ، من لا أحد من هؤلاء ،
-                خطأ ، وهرب أيضًا؟ أحزان الألم في ممارسة عواقبها معه ما لم يتجنب
-                كل متعة ليس هناك الكثير من الوقت ، لا ، فنحن نعتبر كل متعة
-                الألم. أو ، ولكن ، منه أنه ، الذي ولدت منه ، سأفتح متعة عقلانية
-                ملزمة بالثناء على الأناشيد ، وفي نفس الوقت ، معاناة هؤلاء
-                الجبناء المشينين في أولئك الذين هم من واجبات النوع من الملذات ،
-                الرجل الصالح كما هو ، للقيام بذلك في وقت واحد. إنها رحلة ممتعة
-                لأنها تأتي شاقة تندد مؤلمة للغاية أبدا سعيدة؟
-              </p>
+        <div class="orders-table">
+          <section class="best-seller">
+            <h4 class="order-header">
+              <span class="order-number"> رقم الطلب <b>234</b> </span>
+              <span class="status m-3">الحالة: <b>جديد</b></span>
+            </h4>
+
+            <div class="table-wrapper">
+              <table class="dashboard-table">
+                <tr class="table-header">
+                  <th colspan="2">بيانات المنتج</th>
+                  <th>سعر المنتج <span>ر.س</span></th>
+                  <th>خصم المنتج</th>
+                  <th>قيمة خصم المنتج</th>
+                  <th>العدد المطلوب</th>
+                  <th>الإجمالي</th>
+                </tr>
+
+                <tr>
+                  <td class="item-details" colspan="2">
+                    <img
+                      src="./assets/img/products/device-3.jpg"
+                      alt="item"
+                      width="100" />
+                    <p>
+                      .أبجد هوز حطى كلمن هوى ، إجراءات المراقبة المعززة. التوازن
+                      ، الاحتياجات
+                    </p>
+                  </td>
+
+                  <td>100</td>
+                  <td>10%</td>
+                  <td>10</td>
+                  <td>2</td>
+                  <td>180</td>
+                </tr>
+                <tr>
+                  <td class="item-details" colspan="2">
+                    <img
+                      src="./assets/img/products/device-2.jpg"
+                      alt="item"
+                      width="100" />
+                    <p>
+                      .أبجد هوز حطى كلمن هوى ، إجراءات المراقبة المعززة. التوازن
+                      ، الاحتياجات
+                    </p>
+                  </td>
+
+                  <td>100</td>
+                  <td>لا يوجد</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>200</td>
+                </tr>
+                <tr>
+                  <td class="item-details" colspan="2">
+                    <img
+                      src="./assets/img/products/device-1.jpg"
+                      alt="item"
+                      width="100" />
+                    <p>
+                      .أبجد هوز حطى كلمن هوى ، إجراءات المراقبة المعززة. التوازن
+                      ، الاحتياجات
+                    </p>
+                  </td>
+
+                  <td>150</td>
+                  <td>50%</td>
+                  <td>75</td>
+                  <td>2</td>
+                  <td>150</td>
+                </tr>
+              </table>
             </div>
-            <div id="form_status"></div>
-            <div class="contact-form">
-              <form
-                type="POST"
-                id="fruitkha-contact"
-                onSubmit="return valid_datas( this );">
-                <p>
-                  <input
-                    type="text"
-                    placeholder="الإسم الكامل"
-                    name="name"
-                    id="name" />
-                  <input
-                    type="email"
-                    placeholder="البريد الإلكتروني"
-                    name="email"
-                    id="email" />
-                </p>
-                <p>
-                  <input
-                    type="tel"
-                    placeholder="رقم الهاتف"
-                    name="phone"
-                    id="phone" />
-                  <input
-                    type="text"
-                    placeholder="موضوع الرسالة"
-                    name="subject"
-                    id="subject" />
-                </p>
-                <p>
-                  <textarea
-                    name="message"
-                    id="message"
-                    cols="30"
-                    rows="10"
-                    placeholder="الرسالة"></textarea>
-                </p>
-                <input type="hidden" name="token" value="FsWga4&@f6aw" />
-                <p><input type="submit" value="إرسال" /></p>
-              </form>
+
+            <div class="order-info">
+              <div class="order-totals">
+                <div class="subtotal">
+                  الإجمالي الفردي
+                  <span>700</span>
+                </div>
+
+                <div class="product-discounts">
+                  خصم المنتجات
+                  <span>170-</span>
+                </div>
+
+                <div class="coupon-discount">
+                  قسيمة خصم (CODEHERE)
+                  <span>20-</span>
+                </div>
+
+                <div class="total">
+                  الإجمالي الكلي (ر.س)
+                  <span>510</span>
+                </div>
+              </div>
+
+              <div class="order-customer mt-100">
+                <div class="location">
+                  <h5><i class="bi bi-geo-alt"></i> عنوان التوصيل</h5>
+                  <p>المدينة: <span>الرياض</span></p>
+                  <p>الحي: <span>حي عنيزة</span></p>
+                  <p>الشارع: <span>شارع خمسة</span></p>
+                  <p>الرمز البريدي: <span>1026</span></p>
+                  <p>
+                    ملاحظات إضافية:
+                    <span
+                      >.أبجد هوز حطى كلمن هوى ، حسومات محسنة. خطأ الحقيقة أننا
+                      يمكن قطعه مفتوحا. قيل موليستياس ، س عة لأنها تأتي شاقة
+                      تندد مؤلمة للغاية أبدا سعيدة؟</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="pagination-wrap">
+              <ul style="direction: rtl">
+                <li><a href="#">السابق</a></li>
+                <li><a href="#">1</a></li>
+                <li><a class="active" href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">التالي</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- end contact form -->
+    <!-- end products -->
 
     <!-- footer -->
     <div class="footer-area">
@@ -311,9 +381,20 @@
     <script src="assets/js/jquery.meanmenu.min.js"></script>
     <!-- sticker js -->
     <script src="assets/js/sticker.js"></script>
-    <!-- form validation js -->
-    <script src="assets/js/form-validate.js"></script>
     <!-- main js -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+      let allProductsSelects = document.querySelectorAll(".variation-select");
+
+      allProductsSelects.forEach((el) => {
+        el.addEventListener("change", () => {
+          console.log(el.value);
+          let parentProduct = el.parentElement.parentElement;
+          let priceTag = parentProduct.querySelector(".item-price");
+          priceTag.innerText = "100";
+        });
+      });
+    </script>
   </body>
 </html>

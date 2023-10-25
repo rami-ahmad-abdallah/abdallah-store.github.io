@@ -2978,3 +2978,214 @@ table.order-details tbody td {
   border: 1px solid gray;
   text-align: right;
 }
+
+.orders-table {
+  direction: rtl;
+  text-align: right;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  box-shadow: var(--main-element-shadow);
+  border-radius: 10px;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.table-wrapper::-webkit-scrollbar {
+  width: 5px;
+  height: 6px;
+}
+.table-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 5px;
+}
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.table-wrapper .dashboard-table {
+  min-width: -moz-max-content;
+  min-width: max-content;
+  flex: 1;
+  border-collapse: collapse;
+}
+.table-wrapper .dashboard-table .table-header {
+  background-color: #07212e;
+  color: white;
+}
+.table-wrapper .dashboard-table td,
+.table-wrapper .dashboard-table th {
+  border: 1px solid var(--seperator-color);
+  padding: 10px;
+  max-width: 250px;
+  font-size: 14px;
+  text-align: right;
+}
+.table-wrapper .dashboard-table .actions {
+  display: flex;
+  gap: 5px;
+}
+.table-wrapper .dashboard-table tr:nth-child(even) {
+  background-color: #e3e3e3;
+}
+
+.invoice-actions {
+  margin: 30px 0px;
+}
+.invoice {
+  background: white;
+  margin: 25px 0px;
+}
+.invoice h3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6;
+}
+.invoice h3 .invoice-no {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.invoice .four {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  margin: 10px 0px;
+}
+.invoice .four .part {
+  min-width: 300px;
+  flex: 1;
+  padding: 10px 20px;
+}
+.invoice .four h5 {
+  display: flex;
+  gap: 10px;
+}
+.invoice .four h5 .total {
+  font-size: 16px;
+  font-weight: bolder;
+}
+.invoice .four .fc {
+  flex-direction: column;
+  gap: 0;
+  margin: 10px 0px;
+}
+.invoice .invoice-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.invoice .invoice-table th,
+.invoice .invoice-table td {
+  padding: 5px;
+  border: 2px solid rgb(209, 209, 209);
+  text-align: right;
+}
+.invoice .invoice-table th {
+  background: #ededed;
+}
+.invoice .invoice-totals {
+  margin: 30px 0px;
+  width: 300px;
+}
+.invoice .invoice-totals div {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0px;
+}
+.invoice .payment-info {
+  color: gray;
+}
+@media print {
+  .noprint {
+    display: none !important;
+  }
+  .printable {
+    display: block;
+    background: white;
+    margin: 25px 0px;
+    width: 100%;
+    height: 842px;
+    padding: 1px;
+  }
+  .printable h3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #e6e6e6;
+    align-items: center;
+  }
+  .printable h3 .invoice-no {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .printable .four {
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .printable .four .part {
+    min-width: 300px;
+    flex: 1;
+    padding: 3px;
+  }
+  .printable .four .part h4 {
+    border-bottom: 1px solid #e6e6e6;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .printable .four .part h5 p {
+    font-weight: 100;
+  }
+  .printable .four h5 {
+    display: flex;
+    gap: 10px;
+  }
+  .printable .four h5 .total {
+    font-size: 16px;
+    font-weight: bolder;
+  }
+  .printable .four .fc {
+    flex-direction: column;
+    gap: 0;
+    margin: 10px 0px;
+  }
+  .printable .invoice-table table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .printable .invoice-table th,
+  .printable .invoice-table td {
+    padding: 5px;
+    border: 2px solid rgb(209, 209, 209);
+    text-align: right;
+    font-size: 12px;
+    width: -moz-min-content;
+    width: min-content;
+  }
+  .printable .invoice-table th {
+    background: #ededed;
+  }
+  .printable .invoice-totals {
+    width: 175px;
+    font-size: 10px;
+    float: right;
+  }
+  .printable .invoice-totals div {
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 0px;
+  }
+  .printable .payment-info {
+    color: gray;
+    margin-right: 200px;
+  }
+} /*# sourceMappingURL=sidebar.css.map */

@@ -2,17 +2,17 @@
 <html lang="ar">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="المتجر الأول لبيع أجهزة التجميل في المملكة العربية السعودية" />
+      content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/" />
 
     <!-- title -->
-    <title>تواصل معنا</title>
+    <title>جميع المنتجات</title>
 
     <!-- favicon -->
     <link rel="shortcut icon" type="image/png" href="assets/img/favicons.png" />
-
     <!-- google font -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
@@ -113,7 +113,7 @@
     <!-- end header -->
 
     <!-- search area -->
-    <div class="search-area">
+    <div class="search-area noprint">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -131,13 +131,13 @@
     <!-- end search area -->
 
     <!-- breadcrumb-section -->
-    <div class="breadcrumb-section breadcrumb-bg">
+    <div class="breadcrumb-section breadcrumb-bg noprint">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 offset-lg-2 text-center">
             <div class="breadcrumb-text">
-              <p style="letter-spacing: 0px">إحصل على الدعم 24/7</p>
-              <h1>تواصل معنا</h1>
+              <p style="letter-spacing: 0px"></p>
+              <h1>عرض الفاتورة</h1>
             </div>
           </div>
         </div>
@@ -145,77 +145,166 @@
     </div>
     <!-- end breadcrumb section -->
 
-    <!-- contact form -->
-    <div class="contact-from-section mt-150 mb-150">
-      <div class="container">
-        <div class="row text-right" style="direction: rtl">
-          <div class="col-lg-12 mb-5 mb-lg-0">
-            <div class="form-title">
-              <h2>هل لديك أي سؤال ؟</h2>
-              <p>
-                .أبجد هوز حطى كلمن هوى ، حسومات محسنة. خطأ الحقيقة أننا يمكن
-                قطعه مفتوحا. قيل موليستياس ، سوف أكون سهلًا عليك ، فقل الألم هو
-                متعة الباني الرئيسي ، ولا الملذات التي قد يرضيها أحدنا في
-                المتاعب والفرار ؛ بالنسبة له ، المحاضر ، من لا أحد من هؤلاء ،
-                خطأ ، وهرب أيضًا؟ أحزان الألم في ممارسة عواقبها معه ما لم يتجنب
-                كل متعة ليس هناك الكثير من الوقت ، لا ، فنحن نعتبر كل متعة
-                الألم. أو ، ولكن ، منه أنه ، الذي ولدت منه ، سأفتح متعة عقلانية
-                ملزمة بالثناء على الأناشيد ، وفي نفس الوقت ، معاناة هؤلاء
-                الجبناء المشينين في أولئك الذين هم من واجبات النوع من الملذات ،
-                الرجل الصالح كما هو ، للقيام بذلك في وقت واحد. إنها رحلة ممتعة
-                لأنها تأتي شاقة تندد مؤلمة للغاية أبدا سعيدة؟
-              </p>
+    <!-- products -->
+    <div class="product-section mt-150 mb-150">
+      <div class="container text-right" style="direction: rtl">
+        <section class="actions noprint">
+          <a href="#" class="btn btn-primary" onclick="print();" id="print"
+            >طباعة <i class="bi bi-printer"></i
+          ></a>
+
+          <a href="#" id="download" class="btn btn-success"
+            >تحميل <i class="bi bi-cloud-arrow-down"></i
+          ></a>
+        </section>
+
+        <section class="invoice">
+          <h3>
+            <p><img src="./assets/img/layan-store-logo.png" alt="logo" /></p>
+            <p class="invoice-no">رقم الفاتورة <b>EOFAA2 #</b></p>
+          </h3>
+
+          <div class="four">
+            <div class="part">
+              <h4>مكان التوصيل</h4>
+              <h5>
+                <p>المدينة:</p>
+                <b>الرياض</b>
+              </h5>
+
+              <h5>
+                <p>الحي:</p>
+                <b>حي عنيزة</b>
+              </h5>
+
+              <h5>
+                <p>الشارع:</p>
+                <b>شارع خمسة</b>
+              </h5>
+
+              <h5>
+                <p>الرمز البريدي:</p>
+                <b>1207</b>
+              </h5>
+
+              <h5 class="fc">
+                <p>ملاحظات إضافية:</p>
+                <b>
+                  .أبجد هوز حطى كلمن هوى ، حسومات محسنة. خطأ الحقيقة أننا يمكن
+                  قطعه مفتوحا. قيل موليستياس ، سوف أكون سهلًا عليك ، فقل الألم
+                  هو متعة الباني الرئيسي ، ولا الملذات التي قد يرضيها أحدنا في
+                  المتاعب والفرار ؛ بالنسبة له ، المحاضر ، م
+                </b>
+              </h5>
             </div>
-            <div id="form_status"></div>
-            <div class="contact-form">
-              <form
-                type="POST"
-                id="fruitkha-contact"
-                onSubmit="return valid_datas( this );">
-                <p>
-                  <input
-                    type="text"
-                    placeholder="الإسم الكامل"
-                    name="name"
-                    id="name" />
-                  <input
-                    type="email"
-                    placeholder="البريد الإلكتروني"
-                    name="email"
-                    id="email" />
-                </p>
-                <p>
-                  <input
-                    type="tel"
-                    placeholder="رقم الهاتف"
-                    name="phone"
-                    id="phone" />
-                  <input
-                    type="text"
-                    placeholder="موضوع الرسالة"
-                    name="subject"
-                    id="subject" />
-                </p>
-                <p>
-                  <textarea
-                    name="message"
-                    id="message"
-                    cols="30"
-                    rows="10"
-                    placeholder="الرسالة"></textarea>
-                </p>
-                <input type="hidden" name="token" value="FsWga4&@f6aw" />
-                <p><input type="submit" value="إرسال" /></p>
-              </form>
+
+            <div class="part">
+              <h4>بيانات الطلب</h4>
+
+              <h5>
+                <p>الإسم :</p>
+                <b>إسم الزبون الكامل هنا</b>
+              </h5>
+              <h5>
+                <p>التاريخ:</p>
+                <b>10/10/2023 6:30 مساءا</b>
+              </h5>
+
+              <h5>
+                <p>الإجمالي الكلي:</p>
+                <b class="total"> 500 <span>ر.س</span></b>
+              </h5>
             </div>
           </div>
-        </div>
+
+          <div class="invoice-table">
+            <table>
+              <tr>
+                <th>#</th>
+                <th>تفاصيل المنتج</th>
+                <th>سعر المنتج</th>
+                <th>الكمية</th>
+                <th>الخصم</th>
+                <th>الإجمالي</th>
+              </tr>
+
+              <tr>
+                <td>01</td>
+                <td>
+                  .أبجد هوز حطى كلمن هوى ، إجراءات المراقبة المعززة. التوازن ،
+                  الاحتياجات
+                </td>
+                <td>100</td>
+                <td>1</td>
+                <td>لا يوجد</td>
+                <td>100</td>
+              </tr>
+
+              <tr>
+                <td>02</td>
+                <td>
+                  .أبجد هوز حطى كلمن هوى ، إجراءات المراقبة المعززة. التوازن ،
+                  الاحتياجات
+                </td>
+                <td>150</td>
+                <td>1</td>
+                <td>%10</td>
+                <td>135</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="invoice-totals">
+            <div class="subtotal">
+              الإجمالي الفردي
+              <span>250</span>
+            </div>
+
+            <div class="product-discounts">
+              خصم المنتجات
+              <span>15-</span>
+            </div>
+
+            <div class="coupon-discount">
+              قسيمة خصم (CODEHERE)
+              <span>20-</span>
+            </div>
+
+            <div class="total">
+              الإجمالي الكلي (ر.س)
+              <span>215</span>
+            </div>
+          </div>
+
+          <div class="invoice-totals payment-info">
+            بيانات الدفع
+            <div class="subtotal">
+              طريقة الدفع
+              <span>VISA</span>
+            </div>
+
+            <div class="product-discounts">
+              الإسم على البطاقة
+              <span>ABDALLAH</span>
+            </div>
+
+            <div class="coupon-discount">
+              رقم البطاقة
+              <span>XXXX XXXX XXXX 1234</span>
+            </div>
+
+            <div class="total">
+              الإجمالي الكلي (ر.س)
+              <span>215</span>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-    <!-- end contact form -->
+    <!-- end products -->
 
     <!-- footer -->
-    <div class="footer-area">
+    <div class="footer-area noprint">
       <div class="container">
         <div class="row justify-content-end flex-row-reverse">
           <div class="col-lg-4 col-md-6 text-right">
@@ -253,7 +342,7 @@
     <!-- end footer -->
 
     <!-- copyright -->
-    <div class="copyright">
+    <div class="copyright noprint">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-12">
@@ -311,9 +400,20 @@
     <script src="assets/js/jquery.meanmenu.min.js"></script>
     <!-- sticker js -->
     <script src="assets/js/sticker.js"></script>
-    <!-- form validation js -->
-    <script src="assets/js/form-validate.js"></script>
     <!-- main js -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+      let allProductsSelects = document.querySelectorAll(".variation-select");
+
+      allProductsSelects.forEach((el) => {
+        el.addEventListener("change", () => {
+          console.log(el.value);
+          let parentProduct = el.parentElement.parentElement;
+          let priceTag = parentProduct.querySelector(".item-price");
+          priceTag.innerText = "100";
+        });
+      });
+    </script>
   </body>
 </html>
