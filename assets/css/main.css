@@ -2308,6 +2308,14 @@ ul.social-link-team li a {
   border-radius: 3px;
 }
 
+.contact-form form p img {
+  width: 150px;
+  height: 150px;
+  background: #e5e5e5;
+  border-radius: 50%;
+  padding: 10px;
+}
+
 .contact-form form p textarea {
   border: 1px solid #ddd;
   padding: 15px;
